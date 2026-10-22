@@ -20,9 +20,9 @@ const PORTRAIT_SRC = '/images/profile.png'
 
 const projects = [
   {
-    name: 'Demanzo â€” Nagercoil',
+    name: 'Demanzo — Nagercoil',
     type: 'Meta Ads Video Editing',
-    year: '2025â€“2026',
+    year: '2025–2026',
     logo: '/images/logos/demanzo.png',
     description:
       'Client advertisement reels for social campaigns, built around impactful visuals, motion effects and strong storytelling.',
@@ -30,7 +30,7 @@ const projects = [
   {
     name: 'Naveen Events',
     type: 'Meta Ads & Video Editing',
-    year: '2024â€“2026',
+    year: '2024–2026',
     logo: '/images/logos/naveen-events.png',
     description:
       'Event promotional reels with dynamic visuals, smooth transitions and motion effects that bring event designs to life.',
@@ -44,7 +44,7 @@ const projects = [
       'A high-energy social reel with cut-out transitions, motion graphics and an engagement-first edit.',
   },
   {
-    name: 'New Street â€” Menâ€™s Fashion',
+    name: 'New Street — Men’s Fashion',
     type: 'Instagram Reels',
     year: '2026',
     logo: '/images/logos/new-street.png',
@@ -110,8 +110,8 @@ const videoGroups = [
     ],
   },
   {
-    title: 'E-Commerce Product Promotion â€“ Menâ€™s Fashion',
-    category: 'MENâ€™S FASHION',
+    title: 'E-Commerce Product Promotion – Men’s Fashion',
+    category: 'MEN’S FASHION',
     description:
       'Fast-paced product reels presenting menswear with polished movement and style.',
     files: [
@@ -120,7 +120,7 @@ const videoGroups = [
     ],
   },
   {
-    title: 'Home Interior Transformation â€“ Promotional Video Editing',
+    title: 'Home Interior Transformation – Promotional Video Editing',
     category: 'INTERIOR PROMOTION',
     description:
       'A home transformation story showcasing spaces, finishes, and considered details.',
@@ -130,7 +130,7 @@ const videoGroups = [
     ],
   },
   {
-    title: 'ONECRETE â€“ AAC Blocks Promotional Video Editing',
+    title: 'ONECRETE – AAC Blocks Promotional Video Editing',
     category: 'INDUSTRIAL PROMOTION',
     description:
       'A promotional reel presenting the ONECRETE brand and its industrial identity.',
@@ -180,10 +180,10 @@ const skills = [
 
 const process = [
   ['01', 'DISCOVER', 'Understanding goals, audience, and project requirements.', 'â—Ž'],
-  ['02', 'IDEATE', 'Planning the creative direction and finding the right concept.', 'âœ³'],
-  ['03', 'DESIGN', 'Crafting visuals with a focus on mood, rhythm and story.', 'ï¼'],
-  ['04', 'DEVELOP', 'Building a polished edit with considered pacing and motion.', 'âŒ˜'],
-  ['05', 'DELIVER', 'Reviewing, optimizing and delivering with care.', 'â†—'],
+  ['02', 'IDEATE', 'Planning the creative direction and finding the right concept.', '✳'],
+  ['03', 'DESIGN', 'Crafting visuals with a focus on mood, rhythm and story.', '/'],
+  ['04', 'DEVELOP', 'Building a polished edit with considered pacing and motion.', '⌘'],
+  ['05', 'DELIVER', 'Reviewing, optimizing and delivering with care.', '↗'],
 ]
 
 function CursorOrb() {
@@ -284,7 +284,7 @@ function Landing({ onEnter }) {
           Nihas <span>Adil</span>
         </motion.h1>
 
-        <p className="landing-copy">Video Editor Â· Photo Editor Â· Motion Designer</p>
+        <p className="landing-copy">Video Editor · Photo Editor · Motion Designer</p>
 
         <div className="landing-actions">
           <button className="pill pill-dark" onClick={onEnter}>
@@ -382,14 +382,14 @@ function Portfolio({ onHome }) {
       <section className="hero shell">
         <div className="hero-topline">
           <span>VIDEO EDITOR & DIGITAL CREATOR</span>
-          <span>BASED IN INDIA Â· WORKING WORLDWIDE</span>
+          <span>BASED IN INDIA · WORKING WORLDWIDE</span>
         </div>
 
         <div className="hero-stage">
           <div className="hero-backword" aria-hidden="true">CREATE</div>
 
           <div className="hero-intro">
-            <p className="script">Hello, Iâ€™m</p>
+            <p className="script">Hello, I’m</p>
             <h1>
               NIHAS<br />ADIL<span className="red-dot">.</span>
             </h1>
@@ -397,7 +397,7 @@ function Portfolio({ onHome }) {
               VIDEO EDITOR &<br />VISUAL STORYTELLER
             </p>
             <p className="hero-summary">
-              I shape raw footage into stories that move people â€” through rhythm,
+              I shape raw footage into stories that move people — through rhythm,
               cinematic visuals and intentional detail.
             </p>
             <a className="text-link" href="#reels">
@@ -448,7 +448,7 @@ function Portfolio({ onHome }) {
 
         <div className="hero-bottomline">
           <span>EDIT. EXPERIMENT. ELEVATE.</span>
-          <span>SCROLL TO DISCOVER â†“</span>
+          <span>SCROLL TO DISCOVER ↓</span>
         </div>
       </section>
 
@@ -506,7 +506,7 @@ function Portfolio({ onHome }) {
 
           <p>
             Proficient in Adobe Premiere Pro, Adobe After Effects, DaVinci Resolve, CapCut,
-            and Adobe Photoshop â€” with a commitment to creating work that captures attention
+            and Adobe Photoshop — with a commitment to creating work that captures attention
             and communicates ideas effectively.
           </p>
 
@@ -555,7 +555,7 @@ function Portfolio({ onHome }) {
         </div>
 
         <p className="section-intro">
-          A selection of campaigns, reels and visual stories. Videos are grouped by project â€” just press play.
+          A selection of campaigns, reels and visual stories. Videos are grouped by project — just press play.
         </p>
 
         <div className="video-grid">
@@ -637,7 +637,7 @@ function Portfolio({ onHome }) {
 
                         {videoMetadata[file.id] && (
                           <span className="video-dimensions">
-                            {videoMetadata[file.id].width} Ã— {videoMetadata[file.id].height}
+                            {videoMetadata[file.id].width} × {videoMetadata[file.id].height}
                           </span>
                         )}
                       </div>
@@ -684,11 +684,11 @@ function Portfolio({ onHome }) {
         </div>
 
         <blockquote className="quote-panel">
-          <span className="quote-mark">â€œ</span>
-          <p>Great editing doesnâ€™t just show a story. It makes you <em>feel</em> it.</p>
+          <span className="quote-mark">“</span>
+          <p>Great editing doesn’t just show a story. It makes you <em>feel</em> it.</p>
           <footer>Nihas Adil <Asterisk size={16} /></footer>
           <span className="quote-bottom">
-            LETâ€™S MAKE SOMETHING<br />THAT STAYS WITH PEOPLE.
+            LET’S MAKE SOMETHING<br />THAT STAYS WITH PEOPLE.
           </span>
         </blockquote>
       </motion.section>
@@ -697,10 +697,10 @@ function Portfolio({ onHome }) {
         <div className="contact-head">
           <span className="eyebrow">HAVE A GOOD PROJECT IN MIND?</span>
           <h2>
-            LETâ€™S WORK<br /><span>TOGETHER</span><Asterisk />
+            LET’S WORK<br /><span>TOGETHER</span><Asterisk />
           </h2>
           <p>
-            Iâ€™m currently open for new projects and collaborations. Letâ€™s create something
+            I’m currently open for new projects and collaborations. Let’s create something
             amazing that drives results.
           </p>
           <span className="freelance-badge">
@@ -721,7 +721,7 @@ function Portfolio({ onHome }) {
           <a href="tel:+918838484237">
             <span className="contact-icon"><Phone /></span>
             <span>
-              <small>LETâ€™S TALK</small>
+              <small>LET’S TALK</small>
               <strong>+91 88384 84237</strong>
             </span>
             <ArrowUpRight />
@@ -751,7 +751,7 @@ function Portfolio({ onHome }) {
         </div>
 
         <div className="footer-line">
-          <span>Â© {new Date().getFullYear()} NIHAS ADIL</span>
+          <span>© {new Date().getFullYear()} NIHAS ADIL</span>
           <span>MADE WITH INTENTION <Asterisk size={13} /></span>
           <button onClick={onHome}>BACK TO INTRO â†‘</button>
         </div>
@@ -786,7 +786,7 @@ function ChatAssistant() {
     }
 
     if (q.includes('instagram') || q.includes('social')) {
-      return 'Find my work on Instagram: @nihas_fx â€” instagram.com/nihas_fx/'
+      return 'Find my work on Instagram: @nihas_fx — instagram.com/nihas_fx/'
     }
 
     if (q.includes('software') || q.includes('tool')) {
@@ -835,7 +835,7 @@ function ChatAssistant() {
             <div>
               <span className="chat-status-dot" />
               <strong>NIHAS FX ASSISTANT</strong>
-              <small>Portfolio help Â· Quick replies</small>
+              <small>Portfolio help · Quick replies</small>
             </div>
 
             <button
