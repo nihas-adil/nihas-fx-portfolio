@@ -1,0 +1,8 @@
+node_modules
+dist
+.DS_Store
+.env
+
+# Large video assets are kept outside Git
+/public/videos/
+/public/videos-optimized/

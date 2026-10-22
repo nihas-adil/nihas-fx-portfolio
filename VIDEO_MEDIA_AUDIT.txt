@@ -1,0 +1,59 @@
+VIDEO MEDIA AUDIT
+=================
+
+Project public directory: public/videos
+Verification: loaded browser video metadata (videoWidth / videoHeight), plus MP4
+sample-entry inspection (codec IDs). Sample-entry IDs are shown for reference;
+codec support depends on the browser and operating-system decoder.
+
+Category: Naveen Events
+  naveen-events/event-01.mp4 | 1080x1920 | 9:16 (0.5625)
+  naveen-events/event-02.mp4 | 1080x1920 | 9:16 (0.5625)
+
+Category: Real Estate Marketing
+  real-estate/home-01.mp4 | 1080x1920 | 9:16 (0.5625)
+  real-estate/home-02.mp4 | 1080x1920 | 9:16 (0.5625)
+
+Category: Arakkonam Dudes
+  arakkonam-dudes/showroom-01.mp4 | 1080x1920 | 9:16 (0.5625)
+  arakkonam-dudes/showroom-02.mp4 | 1080x1920 | 9:16 (0.5625)
+
+Category: KTM Showroom - Arakkonam
+  ktm-showroom/ktm-01.mp4 | 1080x1920 | 9:16 (0.5625)
+
+Category: Texvalley Mall - Erode
+  texvalley/mall-01.mp4 | 1920x1080 | 16:9 (1.7778)
+  texvalley/mall-02.mp4 | 1080x1920 | 9:16 (0.5625)
+
+Category: E-Commerce Product Promotion - Men's Fashion
+  mens-fashion/fashion-01.mp4 | 1080x1920 | 9:16 (0.5625)
+  mens-fashion/fashion-02.mp4 | 1080x1920 | 9:16 (0.5625)
+
+Category: Home Interior Transformation
+  home-interior/interior-01.mp4 | 1080x1920 | 9:16 (0.5625)
+  home-interior/interior-02.mp4 | 1080x1920 | 9:16 (0.5625)
+
+Category: ONECRETE - AAC Blocks
+  onecrete/brand-promo-01.mp4 | 1080x1920 | 9:16 (0.5625) | actual available reel;
+  not a substitute for either specifically requested source clip
+
+Codec sample entries:
+  13 files: H.264/AVC video (avc1) + AAC audio (mp4a)
+  texvalley/mall-01.mp4: HEVC/H.265 video (hvc1) + AAC audio (mp4a)
+
+Summary: 14 real video entries in eight categories load metadata without
+video errors. All 14 have browser-accessible URLs. Thirteen requested assets
+were SHA-256 verified against their requested source paths and match exactly.
+Chromium playback was verified for portrait H.264, the landscape HEVC
+Texvalley clip, and the additional ONECRETE reel. The original request has
+15 entries total: 13 found source clips plus the following two missing files:
+
+  D:\My best edits\Steel Company\2'Final.mp4 (no matching file found)
+  D:\My best edits\Steel Company\3'Final.mp4 (no matching file found)
+
+The separate available reel was found at:
+  D:\My best edits\Steel Company\Onecrete 1'Reel.mp4
+
+That additional genuine ONECRETE reel is clearly labeled as an extra project
+asset and is not substituted for either missing requested video. The showcase
+therefore renders 14 playable cards and two explicit missing-source cards.
