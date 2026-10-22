@@ -676,3 +676,24 @@ body.portfolio-mode .chat-panel {
     box-sizing: border-box;
   }
 }
+/* MOBILE LANDING PAGE FIX */
+@media (max-width: 600px) {
+  html,
+  body,
+  #root {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: clip;
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  img,
+  video {
+    max-width: 100%;
+  }
+}
