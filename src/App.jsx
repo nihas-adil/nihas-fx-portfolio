@@ -1,4 +1,4 @@
-
+﻿
 import React, { useEffect, useState } from 'react'
 import FireParticles from './FireParticles'
 import { MotionConfig, motion, useReducedMotion } from 'framer-motion'
@@ -20,9 +20,9 @@ const PORTRAIT_SRC = '/images/profile.png'
 
 const projects = [
   {
-    name: 'Demanzo — Nagercoil',
+    name: 'Demanzo â€” Nagercoil',
     type: 'Meta Ads Video Editing',
-    year: '2025–2026',
+    year: '2025â€“2026',
     logo: '/images/logos/demanzo.png',
     description:
       'Client advertisement reels for social campaigns, built around impactful visuals, motion effects and strong storytelling.',
@@ -30,7 +30,7 @@ const projects = [
   {
     name: 'Naveen Events',
     type: 'Meta Ads & Video Editing',
-    year: '2024–2026',
+    year: '2024â€“2026',
     logo: '/images/logos/naveen-events.png',
     description:
       'Event promotional reels with dynamic visuals, smooth transitions and motion effects that bring event designs to life.',
@@ -44,7 +44,7 @@ const projects = [
       'A high-energy social reel with cut-out transitions, motion graphics and an engagement-first edit.',
   },
   {
-    name: 'New Street — Men’s Fashion',
+    name: 'New Street â€” Menâ€™s Fashion',
     type: 'Instagram Reels',
     year: '2026',
     logo: '/images/logos/new-street.png',
@@ -68,8 +68,8 @@ const videoGroups = [
     description:
       'Event films shaped around atmosphere, meaningful details, and the energy of every celebration.',
     files: [
-      { id: 'event-01', label: 'Film 01', src: 'naveen-events/event-01.mp4' },
-      { id: 'event-02', label: 'Film 02', src: 'naveen-events/event-02.mp4' },
+      { id: 'event-01', label: 'Film 01', src: 'https://res.cloudinary.com/rz4ycium/video/upload/v1792663693/event-01.mp4' },
+      { id: 'event-02', label: 'Film 02', src: 'https://res.cloudinary.com/rz4ycium/video/upload/v1792663712/event-02.mp4' },
     ],
   },
   {
@@ -78,8 +78,8 @@ const videoGroups = [
     description:
       'Property showcases highlighting homes through thoughtful pacing and inviting visual detail.',
     files: [
-      { id: 'property-01', label: 'Film 01', src: 'real-estate/home-01.mp4' },
-      { id: 'property-02', label: 'Film 02', src: 'real-estate/home-02.mp4' },
+      { id: 'property-01', label: 'Film 01', src: 'https://res.cloudinary.com/rz4ycium/video/upload/v1792663734/home-01.mp4' },
+      { id: 'property-02', label: 'Film 02', src: 'https://res.cloudinary.com/rz4ycium/video/upload/v1792663736/home-02.mp4' },
     ],
   },
   {
@@ -88,8 +88,8 @@ const videoGroups = [
     description:
       'Showroom edits pairing product-focused visuals with a confident, energetic rhythm.',
     files: [
-      { id: 'showroom-01', label: 'Film 01', src: 'arakkonam-dudes/showroom-01.mp4' },
-      { id: 'showroom-02', label: 'Film 02', src: 'arakkonam-dudes/showroom-02.mp4' },
+      { id: 'showroom-01', label: 'Film 01', src: 'https://res.cloudinary.com/rz4ycium/video/upload/v1792663644/showroom-01.mp4' },
+      { id: 'showroom-02', label: 'Film 02', src: 'https://res.cloudinary.com/rz4ycium/video/upload/v1792663627/showroom-02.mp4' },
     ],
   },
   {
@@ -97,7 +97,7 @@ const videoGroups = [
     category: 'AUTOMOTIVE',
     description:
       'A bold automotive promo focused on the character, details, and movement of the showroom.',
-    files: [{ id: 'automotive-01', label: 'Film 01', src: 'ktm-showroom/ktm-01.mp4' }],
+    files: [{ id: 'automotive-01', label: 'Film 01', src: 'https://res.cloudinary.com/rz4ycium/video/upload/v1792663702/ktm-01.mp4' }],
   },
   {
     title: 'Texvalley Mall Erode',
@@ -105,37 +105,37 @@ const videoGroups = [
     description:
       'Retail campaign edits capturing the mall experience and launch atmosphere.',
     files: [
-      { id: 'retail-01', label: 'Film 01', src: 'texvalley/mall-01.mp4' },
-      { id: 'retail-02', label: 'Film 02', src: 'texvalley/mall-02.mp4' },
+      { id: 'retail-01', label: 'Film 01', src: 'https://res.cloudinary.com/rz4ycium/video/upload/v1792663778/mall-01.mp4' },
+      { id: 'retail-02', label: 'Film 02', src: 'https://res.cloudinary.com/rz4ycium/video/upload/v1792663747/mall-02.mp4' },
     ],
   },
   {
-    title: 'E-Commerce Product Promotion – Men’s Fashion',
-    category: 'MEN’S FASHION',
+    title: 'E-Commerce Product Promotion â€“ Menâ€™s Fashion',
+    category: 'MENâ€™S FASHION',
     description:
       'Fast-paced product reels presenting menswear with polished movement and style.',
     files: [
-      { id: 'fashion-01', label: 'Film 01', src: 'mens-fashion/fashion-01.mp4' },
-      { id: 'fashion-02', label: 'Film 02', src: 'mens-fashion/fashion-02.mp4' },
+      { id: 'fashion-01', label: 'Film 01', src: 'https://res.cloudinary.com/rz4ycium/video/upload/v1792663674/fashion-01.mp4' },
+      { id: 'fashion-02', label: 'Film 02', src: 'https://res.cloudinary.com/rz4ycium/video/upload/v1792663676/fashion-02.mp4' },
     ],
   },
   {
-    title: 'Home Interior Transformation – Promotional Video Editing',
+    title: 'Home Interior Transformation â€“ Promotional Video Editing',
     category: 'INTERIOR PROMOTION',
     description:
       'A home transformation story showcasing spaces, finishes, and considered details.',
     files: [
-      { id: 'interior-01', label: 'Film 01', src: 'home-interior/interior-01.mp4' },
-      { id: 'interior-02', label: 'Film 02', src: 'home-interior/interior-02.mp4' },
+      { id: 'interior-01', label: 'Film 01', src: 'https://res.cloudinary.com/rz4ycium/video/upload/v1792663709/interior-01.mp4' },
+      { id: 'interior-02', label: 'Film 02', src: 'https://res.cloudinary.com/rz4ycium/video/upload/v1792663687/interior-02.mp4' },
     ],
   },
   {
-    title: 'ONECRETE – AAC Blocks Promotional Video Editing',
+    title: 'ONECRETE â€“ AAC Blocks Promotional Video Editing',
     category: 'INDUSTRIAL PROMOTION',
     description:
       'A promotional reel presenting the ONECRETE brand and its industrial identity.',
     files: [
-      { id: 'onecrete-promo-01', label: 'Film 01', src: 'onecrete/brand-promo-01.mp4' },
+      { id: 'onecrete-promo-01', label: 'Film 01', src: 'https://res.cloudinary.com/rz4ycium/video/upload/v1792663705/brand-promo-01.mp4' },
     ],
   },
 ]
@@ -179,11 +179,11 @@ const skills = [
 ]
 
 const process = [
-  ['01', 'DISCOVER', 'Understanding goals, audience, and project requirements.', '◎'],
-  ['02', 'IDEATE', 'Planning the creative direction and finding the right concept.', '✳'],
-  ['03', 'DESIGN', 'Crafting visuals with a focus on mood, rhythm and story.', '／'],
-  ['04', 'DEVELOP', 'Building a polished edit with considered pacing and motion.', '⌘'],
-  ['05', 'DELIVER', 'Reviewing, optimizing and delivering with care.', '↗'],
+  ['01', 'DISCOVER', 'Understanding goals, audience, and project requirements.', 'â—Ž'],
+  ['02', 'IDEATE', 'Planning the creative direction and finding the right concept.', 'âœ³'],
+  ['03', 'DESIGN', 'Crafting visuals with a focus on mood, rhythm and story.', 'ï¼'],
+  ['04', 'DEVELOP', 'Building a polished edit with considered pacing and motion.', 'âŒ˜'],
+  ['05', 'DELIVER', 'Reviewing, optimizing and delivering with care.', 'â†—'],
 ]
 
 function CursorOrb() {
@@ -284,7 +284,7 @@ function Landing({ onEnter }) {
           Nihas <span>Adil</span>
         </motion.h1>
 
-        <p className="landing-copy">Video Editor · Photo Editor · Motion Designer</p>
+        <p className="landing-copy">Video Editor Â· Photo Editor Â· Motion Designer</p>
 
         <div className="landing-actions">
           <button className="pill pill-dark" onClick={onEnter}>
@@ -382,14 +382,14 @@ function Portfolio({ onHome }) {
       <section className="hero shell">
         <div className="hero-topline">
           <span>VIDEO EDITOR & DIGITAL CREATOR</span>
-          <span>BASED IN INDIA · WORKING WORLDWIDE</span>
+          <span>BASED IN INDIA Â· WORKING WORLDWIDE</span>
         </div>
 
         <div className="hero-stage">
           <div className="hero-backword" aria-hidden="true">CREATE</div>
 
           <div className="hero-intro">
-            <p className="script">Hello, I’m</p>
+            <p className="script">Hello, Iâ€™m</p>
             <h1>
               NIHAS<br />ADIL<span className="red-dot">.</span>
             </h1>
@@ -397,7 +397,7 @@ function Portfolio({ onHome }) {
               VIDEO EDITOR &<br />VISUAL STORYTELLER
             </p>
             <p className="hero-summary">
-              I shape raw footage into stories that move people — through rhythm,
+              I shape raw footage into stories that move people â€” through rhythm,
               cinematic visuals and intentional detail.
             </p>
             <a className="text-link" href="#reels">
@@ -448,7 +448,7 @@ function Portfolio({ onHome }) {
 
         <div className="hero-bottomline">
           <span>EDIT. EXPERIMENT. ELEVATE.</span>
-          <span>SCROLL TO DISCOVER ↓</span>
+          <span>SCROLL TO DISCOVER â†“</span>
         </div>
       </section>
 
@@ -506,7 +506,7 @@ function Portfolio({ onHome }) {
 
           <p>
             Proficient in Adobe Premiere Pro, Adobe After Effects, DaVinci Resolve, CapCut,
-            and Adobe Photoshop — with a commitment to creating work that captures attention
+            and Adobe Photoshop â€” with a commitment to creating work that captures attention
             and communicates ideas effectively.
           </p>
 
@@ -555,7 +555,7 @@ function Portfolio({ onHome }) {
         </div>
 
         <p className="section-intro">
-          A selection of campaigns, reels and visual stories. Videos are grouped by project — just press play.
+          A selection of campaigns, reels and visual stories. Videos are grouped by project â€” just press play.
         </p>
 
         <div className="video-grid">
@@ -605,7 +605,7 @@ function Portfolio({ onHome }) {
                             }
                             onError={() => markVideoUnavailable(file.id, file.src, group.category)}
                           >
-                            <source src={`/videos-optimized/${file.src}`} type="video/mp4" />
+                            <source src={file.src.startsWith("https://") ? file.src : `/videos-optimized/${file.src}`} type="video/mp4" />
                           </video>
                         )}
 
@@ -637,7 +637,7 @@ function Portfolio({ onHome }) {
 
                         {videoMetadata[file.id] && (
                           <span className="video-dimensions">
-                            {videoMetadata[file.id].width} × {videoMetadata[file.id].height}
+                            {videoMetadata[file.id].width} Ã— {videoMetadata[file.id].height}
                           </span>
                         )}
                       </div>
@@ -684,11 +684,11 @@ function Portfolio({ onHome }) {
         </div>
 
         <blockquote className="quote-panel">
-          <span className="quote-mark">“</span>
-          <p>Great editing doesn’t just show a story. It makes you <em>feel</em> it.</p>
+          <span className="quote-mark">â€œ</span>
+          <p>Great editing doesnâ€™t just show a story. It makes you <em>feel</em> it.</p>
           <footer>Nihas Adil <Asterisk size={16} /></footer>
           <span className="quote-bottom">
-            LET’S MAKE SOMETHING<br />THAT STAYS WITH PEOPLE.
+            LETâ€™S MAKE SOMETHING<br />THAT STAYS WITH PEOPLE.
           </span>
         </blockquote>
       </motion.section>
@@ -697,10 +697,10 @@ function Portfolio({ onHome }) {
         <div className="contact-head">
           <span className="eyebrow">HAVE A GOOD PROJECT IN MIND?</span>
           <h2>
-            LET’S WORK<br /><span>TOGETHER</span><Asterisk />
+            LETâ€™S WORK<br /><span>TOGETHER</span><Asterisk />
           </h2>
           <p>
-            I’m currently open for new projects and collaborations. Let’s create something
+            Iâ€™m currently open for new projects and collaborations. Letâ€™s create something
             amazing that drives results.
           </p>
           <span className="freelance-badge">
@@ -721,7 +721,7 @@ function Portfolio({ onHome }) {
           <a href="tel:+918838484237">
             <span className="contact-icon"><Phone /></span>
             <span>
-              <small>LET’S TALK</small>
+              <small>LETâ€™S TALK</small>
               <strong>+91 88384 84237</strong>
             </span>
             <ArrowUpRight />
@@ -751,9 +751,9 @@ function Portfolio({ onHome }) {
         </div>
 
         <div className="footer-line">
-          <span>© {new Date().getFullYear()} NIHAS ADIL</span>
+          <span>Â© {new Date().getFullYear()} NIHAS ADIL</span>
           <span>MADE WITH INTENTION <Asterisk size={13} /></span>
-          <button onClick={onHome}>BACK TO INTRO ↑</button>
+          <button onClick={onHome}>BACK TO INTRO â†‘</button>
         </div>
       </motion.footer>
     </motion.main>
@@ -786,7 +786,7 @@ function ChatAssistant() {
     }
 
     if (q.includes('instagram') || q.includes('social')) {
-      return 'Find my work on Instagram: @nihas_fx — instagram.com/nihas_fx/'
+      return 'Find my work on Instagram: @nihas_fx â€” instagram.com/nihas_fx/'
     }
 
     if (q.includes('software') || q.includes('tool')) {
@@ -794,7 +794,7 @@ function ChatAssistant() {
     }
 
     if (q.includes('hello') || q.includes('hi') || q.includes('hey')) {
-      return 'Hey there! 👋 What would you like to know about my video editing work?'
+      return 'Hey there! ðŸ‘‹ What would you like to know about my video editing work?'
     }
 
     return 'Thanks for your message! For project-specific questions, contact me at anihasadil@gmail.com or call +91 88384 84237.'
@@ -835,7 +835,7 @@ function ChatAssistant() {
             <div>
               <span className="chat-status-dot" />
               <strong>NIHAS FX ASSISTANT</strong>
-              <small>Portfolio help · Quick replies</small>
+              <small>Portfolio help Â· Quick replies</small>
             </div>
 
             <button
@@ -930,3 +930,7 @@ export default function App() {
     </MotionConfig>
   )
 }
+
+
+
+
