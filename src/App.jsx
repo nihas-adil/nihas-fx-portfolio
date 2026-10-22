@@ -926,10 +926,11 @@ export default function App() {
         <Portfolio onHome={returnHome} />
       )}
 
-      <ChatAssistant />
+      {page === 'portfolio' && <ChatAssistant />}
     </MotionConfig>
   )
 }
+
 
 
 
