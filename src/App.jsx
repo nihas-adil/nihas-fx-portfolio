@@ -21,43 +21,43 @@ const PORTRAIT_SRC = '/images/profile.png'
 const projects = [
   {
     name: 'Demanzo — Nagercoil',
-    type: 'Meta Ads Video Editing',
+    type: 'B2B Marketing - Design - Technology',
     year: '2025–2026',
     logo: '/images/logos/demanzo.png',
     description:
-      'Client advertisement reels for social campaigns, built around impactful visuals, motion effects and strong storytelling.',
+      'Demanzo is a digital marketing and growth strategy company focused on helping IT, SaaS, and B2B technology businesses generate qualified leads, strengthen their online presence, and accelerate revenue growth through data-driven marketing solutions.',
   },
   {
     name: 'Naveen Events',
-    type: 'Meta Ads & Video Editing',
+    type: 'Event Decoration - Creative Themes - Special Celebrations',
     year: '2024–2026',
     logo: '/images/logos/naveen-events.png',
     description:
-      'Event promotional reels with dynamic visuals, smooth transitions and motion effects that bring event designs to life.',
+      'Naveen Events is an event decoration and planning team based in Nagercoil, Tamil Nadu, specializing in creating memorable celebrations through creative themed decorations and elegant event setups. From birthday celebrations to weddings and family occasions, the team focuses on transforming special moments into beautiful experiences.',
   },
   {
     name: 'Cat Wash Factory',
-    type: 'Instagram Reels',
+    type: 'Car & Bike Detailing - Automotive Care - Paint Services',
     year: '2025',
     logo: '/images/logos/car-wash-factory.png',
     description:
-      'A high-energy social reel with cut-out transitions, motion graphics and an engagement-first edit.',
+      'Washfactory is an automotive care and detailing business based in Nagercoil, Tamil Nadu, offering professional car and bike detailing along with specialized paint services. The business focuses on vehicle appearance, surface care, and maintaining a clean, polished finish.',
   },
   {
     name: 'New Street — Men’s Fashion',
-    type: 'Instagram Reels',
+    type: "Mens Fashion & Apparel",
     year: '2026',
     logo: '/images/logos/new-street.png',
     description:
-      'Trendy, fast-paced fashion edits combining stylish visual effects, cut-out transitions and rhythmic pacing.',
+      "New Street is a contemporary men's fashion brand focused on bringing together modern trends, everyday comfort, and effortless style. With a collection of casual shirts, textured designs, checks, stripes, and versatile everyday wear, the brand delivers fresh fashion choices for style-conscious young men.",
   },
   {
     name: 'Krishna Kumar Ortho Hospital',
-    type: 'Instagram Reels',
+    type: 'KKOH - Orthopaedics & Bone and Joint Care',
     year: '2026',
     logo: '/images/logos/krishna-kumar-ortho-hospital.png',
     description:
-      'A social-ready promotional video highlighting hospital services with clean motion effects and clear messaging.',
+      'A specialized orthopaedic hospital in Nagercoil, providing bone and joint care, trauma and emergency services, joint replacement, spine treatment, and rehabilitation. Established in 1987, the hospital combines specialized medical expertise with a focus on patient-centred care.',
   },
 ]
 
@@ -773,7 +773,7 @@ function ChatAssistant() {
   const getReply = (question) => {
     const q = question.toLowerCase()
 
-    if (q.includes('price') || q.includes('cost') || q.includes('rate')) {
+    if (q.includes('price') || q.includes('pricing') || q.includes('cost') || q.includes('rate')) {
       return 'Pricing depends on the video type, duration, and editing requirements. Use the contact section to request a quote.'
     }
 
@@ -930,8 +930,5 @@ export default function App() {
     </MotionConfig>
   )
 }
-
-
-
 
 
